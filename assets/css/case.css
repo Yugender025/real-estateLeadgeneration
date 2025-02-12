@@ -248,6 +248,13 @@ p{
     max-width: 120px;
 
 }
+.feature_blog {
+    display: grid
+;
+    grid-auto-columns: 100%;
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
 .blog_view1:hover{
     background-color: #0571B4;
         gap: 14px;
