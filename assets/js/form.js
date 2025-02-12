@@ -1,3 +1,61 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("contactModal");
+  const contactButton = document.getElementById("contactButton");
+  const closeButton = document.getElementById("closeButton");
+
+  // Form fields
+  const fields = {
+    name: {
+      element: document.getElementById("name"),
+      validate: (value) => value.trim().length >= 2,
+    },
+    mobile: {
+      element: document.getElementById("mobile"),
+      validate: (value) => /^[0-9]{10}$/.test(value.trim()),
+    },
+    email: {
+      element: document.getElementById("email"),
+      validate: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim()),
+    },
+    message: {
+      element: document.getElementById("message"),
+      validate: (value) => value.trim().length >= 10,
+    },
+  };
+
+  // Modal controls
+  function openModal() {
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    modal.classList.remove("active");
+    document.body.style.overflow = "";
+    resetForm();
+  }
+
+  // Event listeners
+
+  contactButton.addEventListener("click", openModal);
+
+  closeButton.addEventListener("click", closeModal);
+
+  modal.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+
+  // Live validation on blur
+
+  // Keyboard accessibility
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && modal.classList.contains("active")) {
+      closeModal();
+    }
+  });
+});
 document
   .getElementById("enrollmentForm")
   .addEventListener("submit", function (event) {
@@ -10,7 +68,7 @@ document
 
     let isValid = true;
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbxGbwNn_iCHLjtWxFQ8v-HOI7EsdkVUUMoRfi8UPIyenOXz2Jj61EHnB3vMfiTUrNqc2g/exec";
+      "https://script.google.com/macros/s/AKfycbwGwQsGRI0aoAhDd1-dM-7majxlCLVgr5cJ2OeM_QrVScEySbvu3nEHFJfIJQCfDMjl/exec";
     const form = document.forms["google-sheet"];
     // Reset previous error states
     resetErrorState(name, "nameLabel");
