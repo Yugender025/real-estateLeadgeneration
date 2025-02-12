@@ -1,0 +1,600 @@
+/* Mobile Small - 320px and up */
+@media screen and (min-width: 320px) {
+    :root {
+      --h-1-font-size: 32px;
+      --h-1-line-height: 40px;
+      
+      --h-2-font-size: 28px;
+      --h-2-line-height: 36px;
+      
+      --h-3-font-size: 24px;
+      --h-3-line-height: 28px;
+      
+      --h-4-font-size: 20px;
+      --h-4-line-height: 24px;
+      
+      --h-5-font-size: 18px;
+      
+      --h-6-font-size: 16px;
+      --h-6-line-height: 20px;
+      
+      --body-font-size: 16px;
+      --body-line-height: 20px;
+      
+      --p-font-size: 16px;
+      
+      --3xl-sm-font-size: 40px;
+      --4xl-b-font-size: 40px;
+      
+      --formheader-font-size: 20px;
+      --sm-24-font-size: 20px;
+      
+      --btn-font-font-size: 18px;
+    }
+  }
+  
+  /* Mobile Large - 375px and up */
+  @media screen and (min-width: 375px) {
+    :root {
+      --h-1-font-size: 36px;
+      --h-1-line-height: 44px;
+      
+      --h-2-font-size: 30px;
+      --h-2-line-height: 38px;
+      
+      --3xl-sm-font-size: 48px;
+      --4xl-b-font-size: 48px;
+    }
+  }
+  
+  /* Tablet - 768px and up */
+  @media screen and (min-width: 768px) {
+    :root {
+      --h-1-font-size: 42px;
+      --h-1-line-height: 50px;
+      
+      --h-2-font-size: 32px;
+      --h-2-line-height: 42px;
+      
+      --h-3-font-size: 30px;
+      --h-3-line-height: 30px;
+      
+      --h-4-font-size: 24px;
+      --h-4-line-height: 28px;
+      
+      --h-5-font-size: 20px;
+      
+      --h-6-font-size: 18px;
+      --h-6-line-height: 22px;
+      
+      --body-font-size: 16px;
+      --body-line-height: 22px;
+      
+      --p-font-size: 18px;
+      
+      --3xl-sm-font-size: 56px;
+      --4xl-b-font-size: 56px;
+      
+      --formheader-font-size: 22px;
+      --sm-24-font-size: 22px;
+      
+      --btn-font-font-size: 20px;
+    }
+  }
+  
+  /* Desktop - 1024px and up */
+  @media screen and (min-width: 1024px) {
+    :root {
+      --h-1-font-size: 48px;
+      --h-1-line-height: 56px;
+      
+      --h-2-font-size: 36px;
+      --h-2-line-height: 48px;
+      
+      --h-3-font-size: 36px;
+      --h-3-line-height: 33.6px;
+      
+      --h-4-font-size: 28px;
+      --h-4-line-height: 30px;
+      
+      --h-5-font-size: 24px;
+      
+      --h-6-font-size: 20px;
+      --h-6-line-height: 23.8px;
+      
+      --body-font-size: 18px;
+      --body-line-height: 24px;
+      
+      --p-font-size: 20px;
+      
+      --3xl-sm-font-size: 64px;
+      --4xl-b-font-size: 64px;
+      
+      --formheader-font-size: 24px;
+      --sm-24-font-size: 24px;
+      
+      --btn-font-font-size: 24px;
+    }
+  }
+  
+  /* Large Desktop - 1440px and up */
+  @media screen and (min-width: 1440px) {
+    :root {
+        --h-1-font-size: 48px;
+        --h-1-line-height: 56px;
+        
+        --h-2-font-size: 36px;
+        --h-2-line-height: 48px;
+        
+        --h-3-font-size: 36px;
+        --h-3-line-height: 33.6px;
+        
+        --h-4-font-size: 28px;
+        --h-4-line-height: 30px;
+        
+        --h-5-font-size: 24px;
+        
+        --h-6-font-size: 20px;
+        --h-6-line-height: 23.8px;
+        
+        --body-font-size: 18px;
+        --body-line-height: 24px;
+        
+        --p-font-size: 20px;
+        
+        --3xl-sm-font-size: 64px;
+        --4xl-b-font-size: 64px;
+        
+        --formheader-font-size: 24px;
+        --sm-24-font-size: 24px;
+        
+        --btn-font-font-size: 24px;
+      }
+  }
+
+  /* Mobile Small (320px and up) */
+@media screen and (max-width: 375px) {
+    nav {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .menu_links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .innercontainer {
+        padding: 3rem 20px;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .header_container h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .abtcmpy_innerContainer {
+        padding: 2rem 20px;
+        gap: 2rem;
+    }
+
+    .cmpy_historyContainer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .box_container .box_header {
+        font-size: 40px;
+    }
+
+    .schedule_callContainer {
+        height: auto;
+    }
+
+    .schedule_callContainer .click_icon {
+        margin-left: 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    .inner_containerDigiwin {
+        padding: 2rem 20px;
+        flex-direction: column;
+    }
+
+    .leftimg_container {
+        width: 100%;
+        height: auto;
+    }
+
+    .main_containerSteps .header_container h2 {
+        width: 100%;
+    }
+}
+
+/* Tablet (576px to 767px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    nav {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .menu_links {
+        gap: 1rem;
+    }
+
+    .innercontainer {
+        padding: 4rem 30px;
+    }
+
+    .header_container h2 {
+        width: 100%;
+    }
+
+    .abtcmpy_innerContainer {
+        padding: 2.5rem 30px;
+        gap: 3rem;
+    }
+
+    .box_container .box_header {
+        font-size: 48px;
+    }
+
+    .schedule_callContainer .click_icon {
+        margin-left: 20rem;
+        width: 80px;
+        height: 80px;
+    }
+
+    .leftimg_container {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Medium Tablet (768px to 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    nav {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .innercontainer {
+        padding: 5rem 40px;
+    }
+
+    .header_container h2 {
+        width: 700px;
+    }
+
+    .abtcmpy_innerContainer {
+        padding: 3rem 40px;
+    }
+
+    .schedule_callContainer .click_icon {
+        margin-left: 30rem;
+    }
+
+    .leftimg_container {
+        width: 500px;
+    }
+}
+
+/* Desktop (992px to 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .header_container h2 {
+        width: 800px;
+    }
+
+    .schedule_callContainer .click_icon {
+        margin-left: 40rem;
+    }
+
+    .leftimg_container {
+        width: 600px;
+    }
+}
+
+/* Large Desktop (1200px and up) */
+@media screen and (min-width: 1200px) {
+    /* Your original desktop styles remain here */
+    nav {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .innercontainer {
+        padding-top: 6rem;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .header_container h2 {
+        width: 900px;
+    }
+
+    .abtcmpy_innerContainer {
+        padding: 3rem 60px;
+    }
+
+    .schedule_callContainer .click_icon {
+        margin-left: 48rem;
+    }
+
+    .leftimg_container {
+        width: 700px;
+    }
+}
+
+/* Additional Responsive Features */
+@media screen and (max-width: 991px) {
+    .contact-us {
+        margin-left: 2rem;
+    }
+
+    .batch-info {
+        gap: 2rem;
+    }
+
+    .batch-info .batch_desc p {
+        font-size: 24px;
+    }
+
+    nav .hero_section img {
+        max-width: 120px;
+    }
+}
+
+/* Menu Toggle for Mobile */
+@media screen and (max-width: 767px) {
+    .menu_links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .contact-us {
+        margin-left: 0;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}
+
+/* Ensure smooth transitions */
+
+
+/* Base styles remain unchanged */
+
+
+/* Mobile Small (320px to 575px) */
+@media screen and (max-width: 575px) {
+    .services_lead .innercontainer_Services,
+    .hw_we_do .innercontainer_hw_we_do,
+    .digital_srvs .inner_Continaersrvs,
+    .contact_team .innercontainer_Contact,
+    .platforms_Container .inner_Container,
+    .contact_infomsg .inner_container,
+    .mainsrv_containers,
+    .testimonals_innerContainer {
+        padding: 2rem 1.25rem;
+    }
+
+    .services_list {
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    .list1 {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .list1::before {
+        display: none;
+    }
+
+    .service_nme {
+        white-space: normal;
+    }
+
+    .innercontainer_hw_we_do .header_container,
+    .innercontainer_hw_we_do .header_container h2,
+    .inner_Continaersrvs .srvs_headerContainer,
+    .mainheader_container .header_contianer,
+    .mertics_dashboard .header_container,
+    .clients_socailmedia .inner_Container .header_container {
+        width: 100%;
+    }
+
+    .innercontainer_hw_we_do .brnd_dsg_mrkt {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .digital_srvs .inner_Continaersrvs {
+        flex-direction: column;
+    }
+
+    .contact_team .innercontainer_Contact {
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .mainheader_container {
+        border-bottom-right-radius: 50px;
+    }
+
+    .mentor_achievements {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .box_socailmedia {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .testimonalslist_mainContainer {
+        max-width: 90vw;
+        padding: 1rem;
+    }
+
+    .testimonial {
+        max-width: 300px;
+    }
+
+    .testimonial.active {
+        transform: scale(1.1);
+    }
+}
+
+/* Tablet (576px to 767px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .services_lead .innercontainer_Services,
+    .hw_we_do .innercontainer_hw_we_do,
+    .digital_srvs .inner_Continaersrvs,
+    .platforms_Container .inner_Container,
+    .contact_infomsg .inner_container {
+        padding: 2.5rem 2rem;
+    }
+
+    .innercontainer_hw_we_do .header_container,
+    .innercontainer_hw_we_do .header_container h2,
+    .inner_Continaersrvs .srvs_headerContainer {
+        width: 100%;
+    }
+
+    .brnd_dsg_mrkt {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .mentor_achievements {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .box_socailmedia {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Medium Tablet (768px to 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .services_lead .innercontainer_Services,
+    .hw_we_do .innercontainer_hw_we_do,
+    .digital_srvs .inner_Continaersrvs,
+    .platforms_Container .inner_Container {
+        padding: 3rem;
+    }
+
+    .innercontainer_hw_we_do .header_container,
+    .inner_Continaersrvs .srvs_headerContainer {
+        width: 500px;
+    }
+
+    .mentor_achievements {
+        width: 70%;
+    }
+
+    .testimonalslist_mainContainer {
+        max-width: 80vw;
+    }
+}
+
+/* Desktop (992px to 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .innercontainer_hw_we_do .header_container,
+    .inner_Continaersrvs .srvs_headerContainer {
+        width: 550px;
+    }
+
+    .contact_infomsg .inner_container .left_Container {
+        width: 600px;
+    }
+}
+
+/* Additional Responsive Features */
+@media screen and (max-width: 991px) {
+    .srvs_headerContainer h2 {
+        font-size: calc(var(--3xl-sm-font-size) * 0.8);
+    }
+
+    .btn_knwm button,
+    .bt_knwm button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    .mentorimg_Container_2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social_header {
+        align-items: center;
+    }
+}
+
+/* Specific Testimonial Responsive Styles */
+@media screen and (max-width: 768px) {
+    .testimonials-wrapper {
+        min-height: 400px;
+    }
+
+    .testimonial {
+        max-width: 280px;
+    }
+
+    .content {
+        width: 250px;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Grid Layout Responsive */
+@media screen and (max-width: 1200px) {
+    .creatives_Contianer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .creatives_Contianer {
+        grid-template-columns: 1fr;
+    }
+
+    .img_container {
+        height: 300px;
+    }
+}
+
