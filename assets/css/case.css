@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --new-style: rgba(46, 44, 119, 1);
+    --h1-font-family: "IBM Plex Sans", sans-serif;
+    --h1-font-weight: 800;
+    --h1-font-size: 48px;
+    --h1-letter-spacing: 0px;
+    --h1-line-height: 43.20000076293945px;
+    --h1-font-style: normal;
+    --h2-font-family: "IBM Plex Sans", sans-serif;
+    --h2-font-weight: 500;
+    --h2-font-size: 32px;
+    --h2-letter-spacing: 0px;
+    --h2-line-height: 39px;
+    --h2-font-style: normal;
+    --h3-font-family: "IBM Plex Sans", sans-serif;
+    --h3-font-weight: 500;
+    --h3-font-size: 24px;
+    --h3-letter-spacing: 0px;
+    --h3-line-height: 33.599998474121094px;
+    --h3-font-style: normal;
+    --h4-font-family: "IBM Plex Sans", sans-serif;
+    --h4-font-weight: 500;
+    --h4-font-size: 20px;
+    --h4-letter-spacing: 0px;
+    --h4-line-height: 30px;
+    --h4-font-style: normal;
+    --h5-font-family: "IBM Plex Sans", sans-serif;
+    --h5-font-weight: 400;
+    --h5-font-size: 16px;
+    --h5-letter-spacing: 0px;
+    --h5-line-height: 25.600000381469727px;
+    --h5-font-style: normal;
+    --h6-font-family: "IBM Plex Sans", sans-serif;
+    --h6-font-weight: 400;
+    --h6-font-size: 14px;
+    --h6-letter-spacing: 0px;
+    --h6-line-height: 23.799999237060547px;
+    --h6-font-style: normal;
+    --BODY-font-family: "IBM Plex Sans", sans-serif;
+    --BODY-font-weight: 500;
+    --BODY-font-size: 16px;
+    --BODY-letter-spacing: 0px;
+    --BODY-line-height: 24px;
+    --BODY-font-style: normal;
+    --small-font-family: "IBM Plex Sans", sans-serif;
+    --small-font-weight: 500;
+    --small-font-size: 12px;
+    --small-letter-spacing: 0px;
+    --small-line-height: 20px;
+    --small-font-style: normal;
+    --tiny-font-family: "IBM Plex Sans", sans-serif;
+    --tiny-font-weight: 500;
+    --tiny-font-size: 10px;
+    --tiny-letter-spacing: 0px;
+    --tiny-line-height: 16px;
+    --tiny-font-style: normal;
+    --xs-font-family: "IBM Plex Sans", sans-serif;
+    --xs-font-weight: 400;
+    --xs-font-size: 12px;
+    --xs-letter-spacing: 0px;
+    --xs-line-height: 125%;
+    --xs-font-style: normal;
+    --sm-font-family: "IBM Plex Sans", sans-serif;
+    --sm-font-weight: 400;
+    --sm-font-size: 14px;
+    --sm-letter-spacing: 0px;
+    --sm-line-height: 125%;
+    --sm-font-style: normal;
+    --base-font-family: "IBM Plex Sans", sans-serif;
+    --base-font-weight: 400;
+    --base-font-size: 16px;
+    --base-letter-spacing: 0px;
+    --base-line-height: 150%;
+    --base-font-style: normal;
+    --lg-font-family: "IBM Plex Sans", sans-serif;
+    --lg-font-weight: 400;
+    --lg-font-size: 18px;
+    --lg-letter-spacing: 0px;
+    --lg-line-height: 150%;
+    --lg-font-style: normal;
+    --xl-font-family: "IBM Plex Sans", sans-serif;
+    --xl-font-weight: 400;
+    --xl-font-size: 20px;
+    --xl-letter-spacing: 0px;
+    --xl-line-height: 150%;
+    --xl-font-style: normal;
+    --2xl-font-family: "IBM Plex Sans", sans-serif;
+    --2xl-font-weight: 400;
+    --2xl-font-size: 24px;
+    --2xl-letter-spacing: 0px;
+    --2xl-line-height: 150%;
+    --2xl-font-style: normal;
+    --colors-lochmara-50: rgba(241, 248, 254, 1);
+--colors-lochmara-100: rgba(226, 241, 252, 1);
+--colors-lochmara-200: rgba(190, 226, 249, 1);
+--colors-lochmara-300: rgba(132, 203, 245, 1);
+--colors-lochmara-400: rgba(67, 177, 237, 1);
+--colors-lochmara-500: rgba(26, 151, 221, 1);
+--colors-lochmara-600: rgba(14, 130, 203, 1);
+--colors-lochmara-700: rgba(12, 96, 152, 1);
+--colors-lochmara-800: rgba(14, 82, 126, 1);
+--colors-lochmara-900: rgba(17, 69, 105, 1);
+--colors-lochmara-950: rgba(12, 43, 69, 1);
+--colors-west-side-50: rgba(255, 249, 237, 1);
+--colors-west-side-100: rgba(255, 242, 213, 1);
+--colors-west-side-200: rgba(254, 226, 170, 1);
+--colors-west-side-300: rgba(253, 203, 116, 1);
+--colors-west-side-400: rgba(251, 170, 60, 1);
+--colors-west-side-500: rgba(249, 148, 31, 1);
+--colors-west-side-600: rgba(234, 116, 12, 1);
+--colors-west-side-700: rgba(194, 88, 12, 1);
+--colors-west-side-800: rgba(154, 69, 18, 1);
+--colors-west-side-900: rgba(124, 58, 18, 1);
+--colors-west-side-950: rgba(67, 28, 7, 1);
+--colors-shakespeare-50: rgba(237, 252, 254, 1);
+--colors-shakespeare-100: rgba(209, 247, 252, 1);
+--colors-shakespeare-200: rgba(168, 237, 249, 1);
+--colors-shakespeare-300: rgba(108, 220, 244, 1);
+--colors-shakespeare-400: rgba(41, 195, 231, 1);
+--colors-shakespeare-500: rgba(14, 185, 228, 1);
+--colors-shakespeare-600: rgba(13, 133, 173, 1);
+--colors-shakespeare-700: rgba(18, 107, 140, 1);
+--colors-shakespeare-800: rgba(24, 87, 114, 1);
+--colors-shakespeare-900: rgba(24, 73, 97, 1);
+--colors-shakespeare-950: rgba(10, 47, 66, 1);
+--colors-bay-of-many-50: rgba(237, 244, 255, 1);
+--colors-bay-of-many-100: rgba(223, 233, 255, 1);
+--colors-bay-of-many-200: rgba(197, 215, 255, 1);
+--colors-bay-of-many-300: rgba(162, 187, 255, 1);
+--colors-bay-of-many-400: rgba(125, 150, 252, 1);
+--colors-bay-of-many-500: rgba(94, 113, 246, 1);
+--colors-bay-of-many-600: rgba(65, 73, 234, 1);
+--colors-bay-of-many-700: rgba(51, 55, 207, 1);
+--colors-bay-of-many-800: rgba(44, 48, 167, 1);
+--colors-bay-of-many-900: rgba(45, 51, 137, 1);
+--colors-bay-of-many-950: rgba(25, 26, 77, 1);
+--colors-violet-eggplant-50: rgba(252, 245, 254, 1);
+--colors-violet-eggplant-100: rgba(249, 235, 252, 1);
+--colors-violet-eggplant-200: rgba(244, 214, 248, 1);
+--colors-violet-eggplant-300: rgba(236, 181, 242, 1);
+--colors-violet-eggplant-400: rgba(225, 137, 233, 1);
+--colors-violet-eggplant-500: rgba(207, 91, 218, 1);
+--colors-violet-eggplant-600: rgba(182, 60, 189, 1);
+--colors-violet-eggplant-700: rgba(148, 45, 152, 1);
+--colors-violet-eggplant-800: rgba(126, 40, 128, 1);
+--colors-violet-eggplant-900: rgba(106, 37, 106, 1);
+--colors-violet-eggplant-950: rgba(69, 13, 69, 1);
+--colors-lima-50: rgba(245, 250, 235, 1);
+--colors-lima-100: rgba(233, 244, 211, 1);
+--colors-lima-200: rgba(212, 233, 173, 1);
+--colors-lima-300: rgba(184, 218, 124, 1);
+--colors-lima-400: rgba(156, 200, 83, 1);
+--colors-lima-500: rgba(140, 193, 59, 1);
+--colors-lima-600: rgba(97, 138, 38, 1);
+--colors-lima-700: rgba(74, 105, 34, 1);
+--colors-lima-800: rgba(61, 84, 32, 1);
+--colors-lima-900: rgba(53, 72, 31, 1);
+--colors-lima-950: rgba(26, 39, 12, 1);
+--colors-white-50: rgba(255, 255, 255, 1);
+--semantic-text-primary: var(--primitive-color-neutral-black);
+--color-text-default-default: var(--color-primitives-gray-900);
+--color-text-neutral-on-neutral: var(--color-primitives-slate-100);
+--color-text-default-tertiary: var(--color-primitives-gray-400);
+--color-background-default-default: var(--color-primitives-white-1000);
+--color-border-default-default: var(--color-primitives-gray-300);
+--digital-win-1-base-base-black: rgba(10, 10, 11, 1);
+--digital-win-1-base-base-white: rgba(250, 250, 250, 1);
+--vagtha-1-base-base-black-duplicate: rgba(11, 10, 10, 1);
+--vagtha-1-neutrals-neutrals700: rgba(101, 95, 95, 1);
+--vagtha-1-spacing-s: 6px;
+--vagtha-1-spacing-sm: 10px;
+--vagtha-1-radius-m: 10px;
+--vagtha-1-base-base-white-duplicate: rgba(250, 250, 250, 1);
+--vagtha-1-neutrals-neutrals200: rgba(207, 206, 206, 1);
+--vagtha-1-spacing-xs: 4px;
+--not-used-presets-spacing-space5: 24px;
+--not-used-presets-spacing-space3: 12px;
+--not-used-presets-cornerradius-small: 4px;
+--not-used-presets-spacing-space2: 8px;
+--not-used-presets-spacing-space9: 96px;
+--not-used-presets-spacing-space7: 48px;
+--not-used-presets-cornerradius-large: 8px;
+--primitive-color-neutral-black: rgba(0, 0, 0, 1);
+--color-primitives-gray-900: rgba(30, 30, 30, 1);
+--color-primitives-slate-100: rgba(243, 243, 243, 1);
+--color-primitives-gray-400: rgba(179, 179, 179, 1);
+--color-primitives-white-1000: rgba(255, 255, 255, 1);
+--color-primitives-slate-1000: rgba(36, 36, 36, 1);
+--color-primitives-white-400: rgba(255, 255, 255, 0.4);
+--color-primitives-gray-300: rgba(217, 217, 217, 1);
+--color-primitives-gray-600: rgba(68, 68, 68, 1);
+--size-space-400: 16px;
+--size-space-300: 12px;
+--size-radius-200: 8px;
+--size-space-200: 8px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    font-family:  "IBM Plex Sans", sans-serif;
+}
+h2{
+    font-family: var(--h2-font-family);
+    font-size: var(--h2-font-size);
+    font-weight:var(--h2-font-weight);
+    font-style: var(--h2-font-style);
+    letter-spacing: var(--h2-letter-spacing);
+    line-height: var(--h2-line-height);
+}
+p{
+    font-family: var(--base-font-family);
+    font-size: var(--base-font-size);
+    font-weight:var(--base-font-weight);
+    font-style: var(--base-font-style);
+    letter-spacing: var(--base-letter-spacing);
+    line-height: var(--base-line-height);
+}
+.featured-article.module.h-c-grid {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.featured-article__title {
+    margin-block-end: 16px;
+    margin-top: 1rem;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+    transition: .3s;
+    color: #000;
+}
+.featured-article__image img{
+    border-radius: 12px;
+}
+.blog_view1 {
+    margin-top: 2rem;
+    padding: 8px 16px;
+    border-radius: 24px;
+    border: 2px solid #000;
+    width: 100%;
+    max-width: 120px;
+
+}
+.blog_view1:hover{
+    background-color: #0571B4;
+        gap: 14px;
+        color: white;
+        transition: 0.35s ease-in;
+        border: none;
+}
+.blog_view1 .nowrap{
+    font-weight: 500 ;
+}
+.feature_blog {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+}
+a.featured-article__content.featured-article__content-horizontal.h-c-grid__col.h-c-grid__col--12.h-c-grid__col-l--4 {
+    max-width: 500px;
+}
+
+.container {
+    
+    margin-bottom: 3rem;
+}
+
+.blog_headerContainer{
+    margin-bottom: 2rem;
+    color: #333;
+}
+.blog_allArticles{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+    /* padding-bottom: 51px; */
+}
+.filter-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #E3DEDE;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background-color: var(--colors-lochmara-500);
+    border: none;
+}
+
+.filter-btn:not(.active) {
+    background-color: white;
+}
+
+.filter-btn:hover {
+    background-color: var(--colors-lochmara-100);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+   
+    height: 200px;
+    display: flex;
+    align-items: center;
+  
+    background-size: cover;
+    position: relative;
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    background: #ff8c00;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.card-title {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-text {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+mark{
+    background-color: #fbaa3c;
+}
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.card-date {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.read-more {
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/*blogviews*/
+.blogview_innerContainer{
+    padding: 40px 60px 30px 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    position: relative;
+}
+.blog_contentContainer{
+    width: 100%;
+    max-width: 800px;
+    position: sticky;
+}
+.blogcourse_detailsrealted {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+.blogviewheader{
+    margin-bottom: 0.5rem;
+}
+.blogdesc{
+    margin-bottom: 2rem;
+}
+.bullet_points{
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+}
+.innerblog_header{
+    margin-top: 1rem;
+}
+.related_topicsContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    gap: 0.5rem;
+}
+.related_topicsContainer li{
+    font-size: 18px;
+    color: #0571B4;
+}
+.blog_contentHeader .third_header{
+    margin-top: 0.5rem;
+}
+.blog_contentHeader .second_header{
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+.blog_contentHeader .blogdescrpheader{
+    margin-top: 0.5rem;
+}
+.blog_contentHeader .blogbullet_pnts{
+    margin-left: 2rem;
+    margin-top: 0.4rem;
+}
+.blogbullet_pnts li{
+  list-style:square;
+  margin-top: 0.4rem;
+}
+.blogbullet_pnts li span{
+    font-size: 16px;
+    font-weight: 500;
+}
+.aws_serviceslist img{
+    margin-top: 2rem; 
+    border-radius: 12px;  
+}
+.aws_serviceslist{
+   margin-bottom: 3rem;
+}
+.blog_contentHeader a{
+    color: #0847e7;
+}
+.blog_contentHeader .thrid_header{
+    margin-top: 0.5rem;
+}
+.step_1, .step_2 {
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+.blog_contentHeader .container{
+ margin-top: 2rem;
+}
+.blog_contentHeader .steps_header{
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+.blog_contentContainer .blog_descrp{
+    padding: 1rem;
+}
+
+.blog_contentContainer.blog-header {
+    text-align: center;
+    padding: 3rem 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #2c3e50 100%);
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.blog_contentContainer .blog-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.blog_contentContainer .blog-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+
+
+.blog_contentContainer .service-card {
+    background: white;
+    border-radius: 8px;
+
+    margin-bottom: 1.5rem;
+ 
+}
+
+
+
+.blog_contentContainer.service-title {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.blog_contentContainer .feature-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.blog_contentContainer .feature-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.blog_contentContainer .feature-list li::before {
+    content: "→";
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+}
+
+.blog_contentContainer .highlight-box {
+    background: #fff8e8;
+    border-left: 4px solid var(--secondary-color);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+}
+.vpc_contentContainer ul {
+    margin: 10px 0 10px 20px;
+
+}
+.vpc_contentContainer li {
+    margin-bottom: 10px;
+    list-style: square;
+}
+.vpc_contentContainer .highlight {
+    font-weight: bold;
+    color: #000;
+}
+.bullet_points li{
+    margin-top: 0.5rem;
+    list-style: square;
+}
+.innerpnts{
+    margin-top: 0.4rem;
+    margin-left: 2rem;
+}
+.innerpnts li{
+    margin-bottom: 0.5rem;
+}
+.bullet_points .higlight{
+    font-weight: 600;
+}
+.blogcourse_detailsrealted {
+    position: sticky;
+    top: 150px;
+    max-height: calc(134svh - 150px);
+    overflow-y: auto;
+    background-color: #F2F2F2 !important;
+    padding: 2rem;
+}
+.blogcourse_detailsrealted .sm-btn{
+    background-color: #0571B4;
+    color: #eee;
+}
+@media screen and (max-width: 480px){
+    .blog_contentHeader img{
+        height: 30vh;
+    }
+}
+
