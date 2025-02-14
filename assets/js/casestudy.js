@@ -26,6 +26,15 @@ const blogPosts = [
       "A leading real estate developer approached us to market their newly launched residential project and drive high-quality sales conversions. The project featured premium apartments in a prime location..",
     date: "Jun 11, 2024",
   },
+  {
+    title: "GR mayoora",
+    category: "create",
+    link: "blog3.html",
+    image: "assets/images/mayoora-8.jpg",
+    content:
+      "A leading real estate developer approached us to market their newly launched residential project and drive high-quality sales conversions. The project featured premium apartments in a prime location..",
+    date: "Jun 11, 2024",
+  },
   //   {
   //     title: "hihg9",
   //     category: "create",
@@ -50,7 +59,23 @@ function createBlogCard(post) {
                   <h4 class="card-title">${post.title}</h4>
                   <p class="card-text">${post.content}</p>
                   <div class="card-footer">
-                      <span class="card-date">${post.date}</span>
+                  <div class="leads_continaer">
+                   <div class="card-date">
+                         <i class="fa-brands fa-google"> 
+                            </i><p class="green" style="
+                                color: green;
+                                font-weight: bold;
+                            ">24%</p>
+                      </div>
+                     <div class="card-date">
+                         <i class="fa-brands fa-square-facebook" style="color: #0911e1;"></i>
+                         <p class="green" style="
+                                color: green;
+                                font-weight: bold;
+                            ">24%</p>
+                      </div>  
+                  </div>
+                     
                       <a href="${post.link}" class="read-more">
                           Read more
                           <span>→</span>
