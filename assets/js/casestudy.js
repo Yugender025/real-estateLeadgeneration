@@ -51,9 +51,7 @@ function createBlogCard(post) {
           <div class="blog-card">
               <div class="card-image">
                  
-                      <img src="${post.image}" alt="icon" style="width: 100%; height: 100%; object-fit: cover;">
-               
-                 
+                      <img src="${post.image}" alt="icon" style="width: 100%; height: 100%; object-fit: cover;"> 
               </div>
               <div class="card-content">
                   <h4 class="card-title">${post.title}</h4>
@@ -75,7 +73,6 @@ function createBlogCard(post) {
                             ">24%</p>
                       </div>  
                   </div>
-                     
                       <a href="${post.link}" class="read-more">
                           Read more
                           <span>→</span>
