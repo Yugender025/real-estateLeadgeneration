@@ -1,40 +1,40 @@
 const blogPosts = [
   {
-    title: "Anvita",
-    category: "aws",
-    link: "blog2.html",
-    image: "assets/images/high9-slider-2.jpg",
+    title: "GR mayoora",
+    category: "create",
+    link: "case3.html",
+    image: "assets/images/mayoora-8.jpg",
     content:
-      "A leading real estate developer approached us to market their newly launched residential project and drive high-quality sales conversions. The project featured premium apartments in a prime location..",
+      "The apartments at GR Mayoora are thoughtfully designed to provide residents with a luxurious lifestyle, offering spacious 2 and 3-bedroom options that truly redefine contemporary living...",
     date: "Jun 11, 2024",
   },
   {
-    title: "Urbanrise",
+    title: "Anivta High9",
     category: "services",
-    link: "blog2.html",
-    image: "assets/images/urbanrise3.webp",
+    link: "case2.html",
+    image: "assets/images/high9anivita.jpg",
     content:
       "A leading real estate developer approached us to market their newly launched residential project and drive high-quality sales conversions. The project featured premium apartments in a prime location..",
     date: "Jun 11, 2024",
   },
   {
-    title: "GR mayoora",
+    title: "Kapil properties",
     category: "create",
-    link: "blog3.html",
-    image: "assets/images/mayoora-8.jpg",
+    link: "case3.html",
+    image: "assets/images/kapil-1.png",
     content:
-      "A leading real estate developer approached us to market their newly launched residential project and drive high-quality sales conversions. The project featured premium apartments in a prime location..",
+      "Strategically developed in proximity to Hyderabad’s international airport, Kapil Business Park is Shamshabad’s premier commercial real estate project...",
     date: "Jun 11, 2024",
   },
-  {
-    title: "GR mayoora",
-    category: "create",
-    link: "blog3.html",
-    image: "assets/images/mayoora-8.jpg",
-    content:
-      "A leading real estate developer approached us to market their newly launched residential project and drive high-quality sales conversions. The project featured premium apartments in a prime location..",
-    date: "Jun 11, 2024",
-  },
+  // {
+  //   title: "GR mayoora",
+  //   category: "create",
+  //   link: "case4.html",
+  //   image: "assets/images/mayoora-8.jpg",
+  //   content:
+  //     "A leading real estate developer approached us to market their newly launched residential project and drive high-quality sales conversions. The project featured premium apartments in a prime location..",
+  //   date: "Jun 11, 2024",
+  // },
   //   {
   //     title: "hihg9",
   //     category: "create",
@@ -73,7 +73,7 @@ function createBlogCard(post) {
                             ">24%</p>
                       </div>  
                   </div>
-                      <a href="${post.link}" class="read-more">
+                      <a target="_blank" href="${post.link}" class="read-more">
                           Read more
                           <span>→</span>
                       </a>

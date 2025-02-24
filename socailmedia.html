@@ -11,6 +11,7 @@
     <meta property="og:description" content="Expand your real estate business with qualified leads. Find serious buyers and sellers through verified listings and expert support.">
     <title>Real Estate Lead Generation | Connect with Buyers & Sellers</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responive.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css">
@@ -18,7 +19,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="assets/css/gsap.css">
+    <script src="assets/js/navbar.js"></script>
+    <!-- <link rel="stylesheet" href="assets/css/gsap.css"> -->
 
 </head>
 <body>
@@ -36,12 +38,13 @@
             </button>
             <div class="menu_items">
                 <ul class="menu_links">
-                    <li><a href="#">Services</a></li>
+                    <li><a href="index.html">Services</a></li>
                     <li><a href="socailmedia.html">Socail media marketing</a></li>
                     <li><a href="casestudies.html">Case studies</a></li>
-                    <li><a href="aboutus.html">About us</a></li>
-                    <div class="contact-button">
-                        <a href="#form-container"><button id="al" aria-label="Name" class="support-button6"
+                    <li><a href="https://digitalwin.in/about.html">About us</a></li>
+                    <div class="contact-button" id="contactButton">
+                        <a href="#form-container"><button style="padding: 8px 32px;
+    border-radius: 24px;" id="al" aria-label="Name" class="support-button6"
                                 id="support-button" title="Support">
                                 <span class="arrow-container">
                                     <i class="fa-solid fa-circle-arrow-up-right"></i>
@@ -61,7 +64,7 @@
         <h1 style="color: black; text-align: center;">Social media marketing</h1>
     </div>
     <div class="banner_roiImg">
-      <img src="assets/images/socailmedia_mrkt.png" width="1110" height="343" alt="">
+      <img src="assets/images/roibc.png" width="1110" height="343" alt="">
     </div>
 </div>
 <div class="mertics_dashboard">
@@ -325,22 +328,22 @@
        <div class="col-lg-3">
            <h1 class="footer-heading1">Services</h1>
            <ul>
-               <a href="Digitalmarketing.html">
-                   <li style="color:#000000;">Digital marketing</li>
-               </a>
-               <a href="service.html">
-                   <li style="color:#000000;">Web Development</li>
-               </a>
-               <a href="Graphicdesign.html">
-                   <li style="color:#000000;">Graphic Designing</li>
-               </a>
-               <a href="Videoservices.html">
-                   <li style="color:#000000;">Video Editing</li>
-               </a>
-               <a href="3Ddesign.html">
-                   <li style="color:#000000;">3D Designing</li>
-               </a>
-           </ul>
+            <a href="https://digitalwin.in/Digitalmarketing.html">
+                <li style="color:#000000;">Digital marketing</li>
+            </a>
+            <a href="https://digitalwin.in/service.html">
+                <li style="color:#000000;">Web Development</li>
+            </a>
+            <a href="https://digitalwin.in/Graphicdesign.html">
+                <li style="color:#000000;">Graphic Designing</li>
+            </a>
+            <a href="https://digitalwin.in/Videoservices.html">
+                <li style="color:#000000;">Video Editing</li>
+            </a>
+            <a href="https://digitalwin.in/3Ddesign.html">
+                <li style="color:#000000;">3D Designing</li>
+            </a>
+        </ul>
        </div>
        <div class="col-lg-3">
            <h1 class="footer-heading1">Contact us</h1>
@@ -365,6 +368,60 @@
        </div>
    </div>
 </footer>
+<div id="contactModal" class="modal_form">
+    <div class="form-card animate__animated animate__fadeIn">
+        <button class="close-btn" id="closeButton" aria-label="Close modal">×</button>
+        
+        <form id="enrollmentForm" method="post" autocomplete="off" name="google-sheet">
+            <div class="form-content">
+                <h2 class="form-title">
+                    <span>Get ready to build</span>
+                    <span>your business</span>
+                </h2>
+                
+                <div class="name-contact">
+                    <div class="form-group">
+                        <label for="name" id="nameLabel">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        <div class="error-message">Please enter your name</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mobile" id="mobileLabel">Mobile Number</label>
+                        <input type="tel" id="mobile" name="mobile" required placeholder="Enter your mobile number">
+                        <div class="error-message">Please enter a valid mobile number</div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email"id="emailLabel">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                    <div class="error-message">Please enter a valid email address</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message"  id="messageLabel">Your Message</label>
+                    <textarea id="message" name="message" required placeholder="Enter your message here"></textarea>
+                    <div class="error-message">Please enter your message</div>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <div class="spinner"></div>
+                    <span>Submit</span>
+                </button>
+            </div>
+
+            <div class="success-message">
+                <div class="success-icon">✓</div>
+                <h3>Thank you for contacting us!</h3>
+                <p>We'll get back to you shortly.</p>
+            </div>
+        </form>
+    </div>
+</div> 
+<a href="https://wa.me/919985585558" class="whatsapp-link" target="_blank">
+    <img src="assets/images/whatsapp_img.png" width="100" height="100" alt="WhatsApp Icon" class="whatsapp-image">
+  </a>
 <!--------Footer end----------------->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
 <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
@@ -440,6 +497,8 @@ let draggable = Draggable.create('.cards', {
         scrollTween.resume();
     }
 });
+
 </script>
+<script src="assets/js/form.js"></script>
 </body>
 </html>

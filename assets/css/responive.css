@@ -159,9 +159,9 @@
         padding-right: 20px;
     }
 
-    .menu_links {
+    /* .menu_links {
         display: none;
-    }
+    } */
 
     .hamburger {
         display: flex;
@@ -255,6 +255,54 @@
         width: 100%;
         height: auto;
     }
+    .innercontainer {
+        padding: 3rem 20px;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .header_container h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .abtcmpy_innerContainer {
+        padding: 2rem 20px;
+        gap: 2rem;
+    }
+
+    .cmpy_historyContainer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .box_container .box_header {
+        font-size: 40px;
+    }
+
+    .schedule_callContainer {
+        height: auto;
+    }
+
+    .schedule_callContainer .click_icon {
+        margin-left: 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    .inner_containerDigiwin {
+        padding: 2rem 20px;
+        flex-direction: column;
+    }
+
+    .leftimg_container {
+        width: 100%;
+        height: auto;
+    }
+
+    .main_containerSteps .header_container h2 {
+        width: 100%;
+    }
 }
 
 /* Medium Tablet (768px to 991px) */
@@ -282,6 +330,54 @@
 
     .leftimg_container {
         width: 500px;
+    }
+    .innercontainer {
+        padding: 3rem 20px;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .header_container h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .abtcmpy_innerContainer {
+        padding: 2rem 20px;
+        gap: 2rem;
+    }
+
+    .cmpy_historyContainer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .box_container .box_header {
+        font-size: 40px;
+    }
+
+    .schedule_callContainer {
+        height: auto;
+    }
+
+    .schedule_callContainer .click_icon {
+        margin-left: 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    .inner_containerDigiwin {
+        padding: 2rem 20px;
+        flex-direction: column;
+    }
+
+    .leftimg_container {
+        width: 100%;
+        height: auto;
+    }
+
+    .main_containerSteps .header_container h2 {
+        width: 100%;
     }
 }
 
@@ -406,7 +502,7 @@
     }
 
     .list1 {
-        flex-direction: column;
+        flex-direction: row;
         padding: 15px;
     }
 
@@ -438,7 +534,7 @@
 
     .contact_team .innercontainer_Contact {
         flex-direction: column;
-        padding-right: 0;
+        padding: 0;
     }
 
     .mainheader_container {
@@ -446,7 +542,7 @@
     }
 
     .mentor_achievements {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr 2fr;
         width: 100%;
     }
 
@@ -466,6 +562,54 @@
 
     .testimonial.active {
         transform: scale(1.1);
+    }
+    .innercontainer {
+        padding: 3rem 20px;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .header_container h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .abtcmpy_innerContainer {
+        padding: 2rem 20px;
+        gap: 2rem;
+    }
+
+    .cmpy_historyContainer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .box_container .box_header {
+        font-size: 40px;
+    }
+
+    .schedule_callContainer {
+        height: auto;
+    }
+
+    .schedule_callContainer .click_icon {
+        margin-left: 308px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .inner_containerDigiwin {
+        padding: 2rem 20px;
+        flex-direction: column;
+    }
+
+    .leftimg_container {
+        width: 100%;
+        height: auto;
+    }
+
+    .main_containerSteps .header_container h2 {
+        width: 100%;
     }
 }
 
@@ -598,3 +742,182 @@
     }
 }
 
+/*-------------socail media ------------------------*/
+/* Large Screens (1400px and below) */
+@media screen and (max-width: 1400px) {
+    .mertics_dashboard .innersection_Container {
+        padding: 2rem;
+    }
+
+    .mentor_achievements {
+        width: 70%;
+    }
+
+    .contact_infomsg .inner_container .left_Container {
+        width: 600px;
+    }
+
+    .clients_socailmedia .inner_Container .header_container {
+        width: 600px;
+    }
+}
+
+/* Medium Screens (1200px and below) */
+@media screen and (max-width: 1200px) {
+    .mertics_dashboard .header_container {
+        width: 100%;
+    }
+
+    .mertics_dashboard .box_socailmedia {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .mentor_achievements {
+        width: 90%;
+    }
+
+    .mentor-infoAbout {
+        padding-left: 30px;
+        padding-right: 30px;
+        flex-direction: column;
+    }
+
+    .platforms_Container .inner_Container {
+        padding: 2rem;
+    }
+
+    .contact_infomsg .inner_container {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .contact_infomsg .inner_container .left_Container {
+        width: 100%;
+    }
+}
+
+/* Tablet Screens (992px and below) */
+@media screen and (max-width: 992px) {
+    .banners_section {
+        margin-top: 4rem;
+    }
+
+    .mertics_dashboard .innersection_Container {
+        padding: 1.5rem;
+    }
+
+    .mentor_achievements {
+        grid-template-columns: 2fr 2fr;
+        width: 100%;
+    }
+
+    .mentorimg_Container_2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mentorimg_Container_2 .social_header {
+        align-items: center;
+    }
+
+    .clients_socailmedia .inner_Container {
+        padding: 2rem;
+    }
+
+    .clients_socailmedia .inner_Container .header_container {
+        width: 100%;
+    }
+
+    .mainsrv_containers {
+        padding: 2rem;
+    }
+
+    .mainsrv_containers .header_container h2 {
+        width: 100%;
+    }
+}
+
+/* Mobile Screens (768px and below) */
+@media screen and (max-width: 768px) {
+    .banners_section {
+        margin-top: 2rem;
+    }
+
+    .mertics_dashboard .header_container h2 {
+        font-size: calc(var(--h-2-font-size) * 0.8);
+    }
+
+    .mertics_dashboard .box_socailmedia .yrs_Expr {
+        min-width: 100%;
+    }
+
+    .mertics_dashboard .yrs_Header > div {
+        font-size: 48px;
+    }
+
+    .mentorimg_Container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social_header {
+        align-items: center;
+    }
+
+    .mentor-infoAbout {
+        padding: 20px;
+    }
+
+    .platforms_Container .inner_Container {
+        padding: 1.5rem;
+    }
+
+    .msgHeader {
+        font-size: calc(var(--3xl-sm-font-size) * 0.8);
+    }
+
+    .src_Container {
+        padding: 0.5rem;
+    }
+
+    .imgsrc_Container {
+        height: 200px;
+    }
+}
+
+/* Small Mobile Screens (480px and below) */
+@media screen and (max-width: 480px) {
+    .mertics_dashboard .innersection_Container {
+        padding: 1rem;
+    }
+
+    .mertics_dashboard .header_container h2 {
+        font-size: calc(var(--h-2-font-size) * 0.7);
+    }
+
+    .mertics_dashboard .yrs_Header > div {
+        font-size: 36px;
+    }
+
+    .mentorimg_Container_2 .no_students {
+        white-space: normal;
+    }
+
+    .platforms_Container .inner_Container {
+        padding: 1rem;
+    }
+
+    .clients_socailmedia .inner_Container {
+        padding: 1rem;
+    }
+
+    .headersrc_Container h4 {
+        font-size: calc(var(--h-4-font-size) * 0.9);
+    }
+}
+.banner_roiImg img {
+    width: 100%;
+    height: 100%;
+}
