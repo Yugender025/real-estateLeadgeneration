@@ -535,35 +535,280 @@ nav .hero_section img {
     background-size: cover;
 }
 
+/* Base styles */
+:root {
+    --h-1-font-weight: 700;
+    --colors-white-50: #ffffff;
+    --h-1-font-size: 2.5rem;
+    --h-1-letter-spacing: -0.02em;
+    --h-1-line-height: 1.2;
+}
+
 .innercontainer {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-top: 6rem;
-    padding-left: 60px;
-    padding-right: 60px;
+    justify-content: space-between;
+    padding: 6rem 60px 0;
+    max-width: 1280px;
+    margin: 0 auto;
+    gap: 2rem;
 }
+
 .course_header {
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 1.3rem;
+    max-width: 550px;
 }
-.course_header h1{
+
+.course_header h1 {
     font-weight: var(--h-1-font-weight) !important;
     color: var(--colors-white-50);
     font-size: var(--h-1-font-size) !important;
-    letter-spacing:var(--h-1-letter-spacing);
+    letter-spacing: var(--h-1-letter-spacing);
     line-height: var(--h-1-line-height);
+    margin: 0;
 }
+
+.course_header h1 span {
+    color: var(--colors-bordeaux-600) /* Adjust this color to match your theme */
+}
+
+.caption_container {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
 .left_container {
-    display: flex
-;
+    display: flex;
     align-items: flex-start;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 2rem;
+    flex: 1;
+}
+
+.right_container {
+    flex: 1;
+    max-width: 500px;
+}
+
+.knw-btn button {
+    background-color: var(--colors-bordeaux-600) ; /* Adjust this color to match your theme */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.knw-btn button:hover {
+    background-color: var(--colors-bordeaux-900) ; /* Darker shade for hover state */
+}
+
+/* Form styles */
+.form-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+}
+
+.form-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.name-contact {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    display: none;
+}
+
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
+.submit-btn.loading .spinner {
+    display: block;
+}
+
+.success-message {
+    text-align: center;
+    display: none;
+    padding: 2rem;
+}
+
+.success-icon {
+    background-color: #2ecc71;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 1.5rem;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 992px) {
+    .innercontainer {
+        padding: 4rem 40px 0;
+    }
+    
+    .course_header h1 {
+        font-size: 2.2rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .innercontainer {
+        flex-direction: column;
+        padding: 3rem 30px 0;
+        gap: 3rem;
+    }
+    
+    .left_container, .right_container {
+        width: 100%;
+        max-width: 100%;
+    }
+    .right_container{
+        padding-right: 3rem;
+    }
+    .course_header {
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .caption_container {
+        text-align: center;
+    }
+    
+    .knw-btn {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .innercontainer {
+        padding: 2rem 20px 0;
+    }
+    
+    .course_header h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    .caption_container {
+        font-size: 1rem;
+    }
+    
+    .name-contact {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .form-card {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .course_header h1 {
+        font-size: 1.6rem !important;
+    }
+    
+    .knw-btn button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
 }
 .abt_cmpy {
     width: 100%;

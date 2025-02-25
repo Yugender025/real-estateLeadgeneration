@@ -166,12 +166,14 @@
     .hamburger {
         display: flex;
     }
-
-    .innercontainer {
+    .brnd_dsg_mrkt .imgs_container{
+        padding: 1rem;
+    }
+    /* .innercontainer {
         padding: 3rem 20px;
         flex-direction: column;
         gap: 2rem;
-    }
+    } */
 
     .header_container h2 {
         width: 100%;
@@ -228,10 +230,12 @@
         gap: 1rem;
     }
 
-    .innercontainer {
+    /* .innercontainer {
         padding: 4rem 30px;
+    } */
+    .brnd_dsg_mrkt .imgs_container{
+        padding: 1rem;
     }
-
     .header_container h2 {
         width: 100%;
     }
@@ -255,11 +259,11 @@
         width: 100%;
         height: auto;
     }
-    .innercontainer {
+    /* .innercontainer {
         padding: 3rem 20px;
         flex-direction: column;
         gap: 2rem;
-    }
+    } */
 
     .header_container h2 {
         width: 100%;
@@ -311,10 +315,12 @@
         padding-left: 40px;
         padding-right: 40px;
     }
-
-    .innercontainer {
-        padding: 5rem 40px;
+    .brnd_dsg_mrkt .imgs_container{
+        padding: 1rem;
     }
+    /* .innercontainer {
+        padding: 5rem 40px;
+    } */
 
     .header_container h2 {
         width: 700px;
@@ -331,12 +337,14 @@
     .leftimg_container {
         width: 500px;
     }
-    .innercontainer {
+    /* .innercontainer {
         padding: 3rem 20px;
         flex-direction: column;
         gap: 2rem;
+    } */
+    .brnd_dsg_mrkt .imgs_container{
+        padding: 1rem;
     }
-
     .header_container h2 {
         width: 100%;
         text-align: center;
@@ -403,12 +411,12 @@
         padding-left: 60px;
         padding-right: 60px;
     }
-
+/* 
     .innercontainer {
         padding-top: 6rem;
         padding-left: 60px;
         padding-right: 60px;
-    }
+    } */
 
     .header_container h2 {
         width: 900px;
@@ -530,6 +538,7 @@
 
     .digital_srvs .inner_Continaersrvs {
         flex-direction: column;
+        gap: 2rem;
     }
 
     .contact_team .innercontainer_Contact {
@@ -563,11 +572,11 @@
     .testimonial.active {
         transform: scale(1.1);
     }
-    .innercontainer {
+    /* .innercontainer {
         padding: 3rem 20px;
         flex-direction: column;
         gap: 2rem;
-    }
+    } */
 
     .header_container h2 {
         width: 100%;
