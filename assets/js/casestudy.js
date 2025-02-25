@@ -2,7 +2,7 @@ const blogPosts = [
   {
     title: "GR mayoora",
     category: "create",
-    link: "case3.html",
+    link: "case1.html",
     image: "assets/images/mayoora-8.jpg",
     content:
       "The apartments at GR Mayoora are thoughtfully designed to provide residents with a luxurious lifestyle, offering spacious 2 and 3-bedroom options that truly redefine contemporary living...",
